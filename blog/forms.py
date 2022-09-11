@@ -7,7 +7,7 @@ class PostForm(forms.ModelForm):
     category = forms.ModelChoiceField(queryset=Category.objects.all(), empty_label="Select")
     class Meta:
         model = Post
-        fielsds= (
+        fields= (
             "title",
             "content",
             "image",
